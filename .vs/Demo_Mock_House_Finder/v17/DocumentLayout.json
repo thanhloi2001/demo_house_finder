@@ -1,0 +1,381 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CSharp\\Demo_Mock_House_Finder\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\house.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\userrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\campus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\village.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\roomtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\roomimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\roomimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\roomhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\roomhistory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\rate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\houseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\houseimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\commune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\commune.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\model\\enum\\enumactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\model\\enum\\enumactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|d:\\csharp\\demo_mock_house_finder\\demo_mock_house_finder\\demo_mock_house_finder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9AFA95CD-46FB-4D7E-8071-B353356E1D43}|Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj|solutionrelative:demo_mock_house_finder\\demo_mock_house_finder.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Campus.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Campus.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Campus.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Campus.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Campus.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:10:57.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRole.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\UserRole.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\UserRole.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\UserRole.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\UserRole.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:13:31.119Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\User.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\User.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\User.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\User.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAQwDYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:09:41.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAA9wCYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T06:15:27.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "House.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\House.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\House.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\House.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\House.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAuwCcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:12:10.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Address.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Address.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Address.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Address.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Address.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:10:32.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Program.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Program.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Program.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-25T06:31:33.825Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\appsettings.json",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\appsettings.json",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\appsettings.json",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-03-25T06:26:38.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Village.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Village.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Village.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Village.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Village.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:12:45.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Status.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Status.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Status.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Status.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Status.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:14:45.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RoomType.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomType.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\RoomType.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomType.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\RoomType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:16:25.63Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RoomImage.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomImage.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\RoomImage.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomImage.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\RoomImage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:14:03.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomHistory.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomHistory.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\RoomHistory.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\RoomHistory.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\RoomHistory.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowAUAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:17:13.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Room.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Room.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Room.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Room.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Room.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAAwAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:14:18.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Report.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Report.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Report.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Report.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Report.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wAUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:11:35.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Rate.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Rate.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Rate.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Rate.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Rate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:10:01.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HouseImage.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\HouseImage.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\HouseImage.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\HouseImage.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\HouseImage.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:11:58.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "District.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\District.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\District.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\District.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\District.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:15:44.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Commune.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Commune.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Commune.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Commune.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Commune.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T03:15:11.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "EnumActive.cs",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Enum\\EnumActive.cs",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Model\\Enum\\EnumActive.cs",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Model\\Enum\\EnumActive.cs",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Model\\Enum\\EnumActive.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-24T15:12:51.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Demo_Mock_House_Finder",
+              "DocumentMoniker": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj",
+              "RelativeDocumentMoniker": "Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj",
+              "ToolTip": "D:\\CSharp\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj",
+              "RelativeToolTip": "Demo_Mock_House_Finder\\Demo_Mock_House_Finder.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-25T08:00:18.376Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
