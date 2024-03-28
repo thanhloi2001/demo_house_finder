@@ -7,7 +7,7 @@ namespace Demo_Mock_House_Finder.Model
     public class District
     {
         [Key]
-        public int DistricID { get; set; }
+        public int DistrictID { get; set; }
         public string? DistricName { get; set; }
         public DateTime? CreatedDate { get; set; }
         public ICollection<Commune>? Communes { get; set; }

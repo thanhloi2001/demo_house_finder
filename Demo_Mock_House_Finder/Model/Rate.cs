@@ -16,7 +16,7 @@ namespace Demo_Mock_House_Finder.Model
         public House? House { get; set; }
         public int? StudentID { get; set; }
         [ForeignKey("StudentID")]
-        public User? User { get; set; }
+        public User? UserStudent { get; set; }
 
         public DateTime CreatedDate { get; set; }
         public DateTime LastModifiedDate { get; set; }

@@ -5,9 +5,14 @@ D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Demo_Mo
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Demo_Mock_House_Finder.runtimeconfig.json
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Demo_Mock_House_Finder.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Demo_Mock_House_Finder.pdb
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\AutoMapper.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Azure.Core.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Azure.Identity.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Humanizer.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.AspNetCore.JsonPatch.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -32,6 +37,8 @@ D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microso
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -126,6 +133,7 @@ D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mo
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.csproj.CoreCompileInputs.cache
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.MvcApplicationPartsAssemblyInfo.cs
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.MvcApplicationPartsAssemblyInfo.cache
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.sourcelink.json
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\staticwebassets.build.json
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\staticwebassets.development.json
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\staticwebassets\msbuild.Demo_Mock_House_Finder.Microsoft.AspNetCore.StaticWebAssets.props

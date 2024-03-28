@@ -14,8 +14,7 @@ namespace Demo_Mock_House_Finder.Data
         public DbSet<User> Users { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Commune> Communes { get; set; }
-        public DbSet<Village> Villages { get; set; }
-         
+        public DbSet<Village> Villages { get; set; }         
         public DbSet<Status> Statuses { get; set; }
         public DbSet<RoomType> RoomTypes { get; set; }
         public DbSet<Room> Rooms {  get; set; } 
@@ -24,20 +23,13 @@ namespace Demo_Mock_House_Finder.Data
         public DbSet<RoomImage> Roomimages { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<RoomHistory> RoomHistories { get; set; }
+        public DbSet<LocalUser> LocalUsers { get; set; }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<House>()
-                        .HasOne(h => h.Landlord)
-                        .WithMany(u => u.Houses)
-                        .HasForeignKey(h => h.LandlordID);
-            modelBuilder.Entity<House>()
-                        .HasOne(h => h.Landlord)
-                        .WithMany()
-                        .HasForeignKey(h => h.CreatedBy);
-            modelBuilder.Entity<House>()
-                        .HasOne(h => h.Landlord)
-                        .WithMany()
-                        .HasForeignKey(h => h.LastModifiedBy);
+            
         }
     }
 }

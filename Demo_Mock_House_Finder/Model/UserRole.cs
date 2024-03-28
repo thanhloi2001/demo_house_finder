@@ -7,7 +7,7 @@ namespace Demo_Mock_House_Finder.Model
     public class UserRole
     {
         [Key]
-        public int RoleId { get; set; }
+        public int RoleID { get; set; }
         public string? RoleName { get; set; }
         public DateTime? CreatedDate { get; set; }
         public ICollection<User>? Users { get; set; }

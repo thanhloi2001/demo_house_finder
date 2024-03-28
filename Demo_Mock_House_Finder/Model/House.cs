@@ -26,19 +26,19 @@ namespace Demo_Mock_House_Finder.Model
         
         public int? LandlordID { get; set; }
         [ForeignKey("LandlordID")]
-        public User? Landlord { get; set; }
+        public User Landlord { get; set; }
 
         public int? CampusID { get; set; }
         [ForeignKey("CampusID")]
-        public Campus? Campus { get; set; }
+        public Campus Campus { get; set; }
 
         public int? CreatedBy { get; set; }
         [ForeignKey("CreatedBy")]
-        public User? UserCreated { get; set; }
+        public User UserCreated { get; set; }
 
         public int? LastModifiedBy { get; set; }
         [ForeignKey("LastModifiedBy")]
-        public User? UserLastModified { get; set; }
+        public User UserLastModified { get; set; }
         
         public ICollection<Room>? Rooms { get; set; }
 

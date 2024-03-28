@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Demo_Mock_House_Finder")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5cf484ce8ea5aa111b8b08ade909d80e8212571")]
 [assembly: System.Reflection.AssemblyProductAttribute("Demo_Mock_House_Finder")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Demo_Mock_House_Finder")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

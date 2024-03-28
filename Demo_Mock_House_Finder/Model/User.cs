@@ -8,7 +8,7 @@ namespace Demo_Mock_House_Finder.Model
     public class User
     {
         [Key]
-        public int UserId { get; set; }
+        public int UserID { get; set; }
         public string? UserName { get; set; }
         public string? Email { get; set; }
         public string? Password { get; set; }
@@ -39,16 +39,27 @@ namespace Demo_Mock_House_Finder.Model
         public int? CreatedBy { get; set; }
 
         [ForeignKey("CreatedBy")]
-        public User? UserCreatedBy { get; set; }
+        public User? CreatedUser { get; set; }
 
         public int? LastModifiedBy { get; set; }
 
         [ForeignKey("LastModifiedBy")]
-        public User? UserLastModifiedBy { get; set; }
+        public User? LastModifiedUser { get; set; }
 
-        public ICollection<Rate>? Rates { get; set; }
-        public ICollection<Report>? Reports { get; set; }
-        public ICollection<House>? Houses { get; set; }
+        [InverseProperty("UserStudent")]
+        public ICollection<Rate>? RatesStudent { get; set; }
+        [InverseProperty("UserLastModified")]
+        public ICollection<Rate>? RatesModified { get; set; }
+        [InverseProperty("UserStudent")]   
+        public ICollection<Report>? ReportsStudent { get; set; }
+        [InverseProperty("UserLastModified")]
+        public ICollection<Report>? ReportsModified { get; set; }
+        [InverseProperty("Landlord")]
+        public ICollection<House>? HousesLandlord { get; set; }
+        [InverseProperty("UserLastModified")]
+        public ICollection<House>? HousesModified { get; set; }
+
+
         
     }
 }

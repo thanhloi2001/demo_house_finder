@@ -12,9 +12,9 @@ namespace Demo_Mock_House_Finder.Model
         public DateTime? CreatedDate { get; set; }
         public DateTime? LastModifiedDate { get; set; }
 
-        //public int? HouseID { get; set; }
+        public int? HouseID { get; set; }
         //[ForeignKey("HosueID")]
-        //public House? House { get; set; }
+        public House? House { get; set; }
         public ICollection<User>? Users { get; set; }
         public ICollection<Campus>? Campuses { get; set; }
     }

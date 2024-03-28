@@ -7,7 +7,7 @@ namespace Demo_Mock_House_Finder.Model
     public class Campus
     {
         [Key]
-        public int CampusId { get; set; }
+        public int CampusID { get; set; }
         public string? CampusName { get; set; }
         public int? AddressID { get; set; }
         [ForeignKey("AddressID")]
