@@ -217,35 +217,6 @@ namespace Demo_Mock_House_Finder.Migrations
                     b.ToTable("HouseImage");
                 });
 
-            modelBuilder.Entity("Demo_Mock_House_Finder.Model.LocalUser", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Password")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Role")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("LocalUser");
-                });
-
             modelBuilder.Entity("Demo_Mock_House_Finder.Model.Rate", b =>
                 {
                     b.Property<int>("RateID")
@@ -599,6 +570,32 @@ namespace Demo_Mock_House_Finder.Migrations
                     b.HasKey("RoleID");
 
                     b.ToTable("UserRole");
+
+                    b.HasData(
+                        new
+                        {
+                            RoleID = 1,
+                            CreatedDate = new DateTime(2024, 3, 31, 22, 14, 0, 300, DateTimeKind.Local).AddTicks(1163),
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            RoleID = 2,
+                            CreatedDate = new DateTime(2024, 3, 31, 22, 14, 0, 300, DateTimeKind.Local).AddTicks(1179),
+                            RoleName = "Staff"
+                        },
+                        new
+                        {
+                            RoleID = 3,
+                            CreatedDate = new DateTime(2024, 3, 31, 22, 14, 0, 300, DateTimeKind.Local).AddTicks(1181),
+                            RoleName = "Landlord"
+                        },
+                        new
+                        {
+                            RoleID = 4,
+                            CreatedDate = new DateTime(2024, 3, 31, 22, 14, 0, 300, DateTimeKind.Local).AddTicks(1182),
+                            RoleName = "Student"
+                        });
                 });
 
             modelBuilder.Entity("Demo_Mock_House_Finder.Model.Village", b =>

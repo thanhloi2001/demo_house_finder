@@ -1,4 +1,3 @@
-
 using Demo_Mock_House_Finder.Data;
 using Demo_Mock_House_Finder.Repository;
 using Demo_Mock_House_Finder.Repository.GenericRepository;
@@ -26,6 +25,8 @@ namespace Demo_Mock_House_Finder
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
@@ -45,7 +46,6 @@ namespace Demo_Mock_House_Finder
             builder.Services.AddScoped<IUserRepository, UserRepository>(); 
             builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
             builder.Services.AddScoped<IVillageRepository, VillageRepository>();
-            builder.Services.AddScoped<IUserAuthenticationRepository, UserAuthenticationRepository>();
             
             builder.Services.AddAutoMapper(typeof(MappingConfig));
 
@@ -75,7 +75,10 @@ namespace Demo_Mock_House_Finder
             builder.Services.AddControllers(option =>
             {
                 //option.ReturnHttpNotAcceptable=true;
-            }).AddNewtonsoftJson().AddXmlDataContractSerializerFormatters();
+            }).AddNewtonsoftJson(options =>
+            {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            }).AddXmlDataContractSerializerFormatters();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(options =>

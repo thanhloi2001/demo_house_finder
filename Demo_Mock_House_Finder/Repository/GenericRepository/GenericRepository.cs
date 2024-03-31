@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 
 namespace Demo_Mock_House_Finder.Repository.GenericRepository
 {
-    public class GenericRepository<T> : IGenericRepository<T> where T : class
+    public class GenericRepository<T> : IGenericRepository<T>  where T : class
     {
         private readonly ApplicationDbContext _db;
         protected readonly DbSet<T> _dbSet;

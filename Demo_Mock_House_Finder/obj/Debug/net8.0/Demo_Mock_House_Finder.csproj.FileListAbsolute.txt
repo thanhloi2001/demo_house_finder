@@ -148,3 +148,4 @@ D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\refint\
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.pdb
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\Demo_Mock_House_Finder.genruntimeconfig.cache
 D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\obj\Debug\net8.0\ref\Demo_Mock_House_Finder.dll
+D:\CSharp\Demo_Mock_House_Finder\Demo_Mock_House_Finder\bin\Debug\net8.0\Swashbuckle.AspNetCore.Newtonsoft.dll

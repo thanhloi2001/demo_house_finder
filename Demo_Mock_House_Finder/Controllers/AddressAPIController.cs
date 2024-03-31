@@ -16,20 +16,21 @@ namespace Demo_Mock_House_Finder.Controllers
     public class AddressAPIController : ControllerBase
     {
         protected APIResponse _response;
-        private readonly IGenericRepository<Address> _dbAddres;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _unitOfWork;
 
-        public AddressAPIController(IUnitOfWork unitOfWork)
+        public AddressAPIController(IUnitOfWork unitOfWork, IMapper mapper)
         {
             _unitOfWork = unitOfWork;
-        }
-        public AddressAPIController(IGenericRepository<Address> dbAddress, IMapper mapper)
-        {
-            _dbAddres = dbAddress;
             _mapper = mapper;
             this._response = new();
         }
+        //public AddressAPIController(IGenericRepository<Address> dbAddress, IMapper mapper)
+        //{
+        //    _dbAddres = dbAddress;
+        //    _mapper = mapper;
+        //    this._response = new();
+        //}
 
         [HttpGet]
         [Authorize]
@@ -38,7 +39,7 @@ namespace Demo_Mock_House_Finder.Controllers
         {
             try
             {
-                IEnumerable<Address> addressList = await _dbAddres.GetAllAsync();
+                IEnumerable<Address> addressList = await _unitOfWork.Addresses.GetAllAsync();
                 _response.Result = _mapper.Map<List<AddressDTO>>(addressList);
                 _response.StatusCode = HttpStatusCode.OK;
                 return Ok(_response);
@@ -65,7 +66,7 @@ namespace Demo_Mock_House_Finder.Controllers
                     _response.StatusCode = HttpStatusCode.BadRequest;
                     return BadRequest(_response);
                 }
-                var address = await _dbAddres.GetByIDAsync(u => u.AddressID == id);
+                var address = await _unitOfWork.Addresses.GetByIDAsync(u => u.AddressID == id);
                 if (address == null)
                 {
                     _response.StatusCode = HttpStatusCode.NotFound;
@@ -92,7 +93,7 @@ namespace Demo_Mock_House_Finder.Controllers
         {
             try
             {                
-                if (await _dbAddres.GetByIDAsync(u => u.AddressName.ToLower() == createDTO.AddressName.ToLower()) != null)
+                if (await _unitOfWork.Addresses.GetByIDAsync(u => u.AddressName.ToLower() == createDTO.AddressName.ToLower()) != null)
                 {
                     ModelState.AddModelError("CustomError", "Address already Exists!");
                     return BadRequest(ModelState);
@@ -104,7 +105,7 @@ namespace Demo_Mock_House_Finder.Controllers
                 
                 Address model = _mapper.Map<Address>(createDTO);
                 
-                await _dbAddres.CreateAsync(model);
+                await _unitOfWork.Addresses.CreateAsync(model);
                 _response.StatusCode = HttpStatusCode.Created;
                 _response.IsSuccess = true;
                 return CreatedAtAction(nameof(GetAddressByID), new { id = model.AddressID }, model);
@@ -130,12 +131,12 @@ namespace Demo_Mock_House_Finder.Controllers
                 {
                     return BadRequest();
                 }
-                var address = await _dbAddres.GetByIDAsync(u => u.AddressID == id);
+                var address = await _unitOfWork.Addresses.GetByIDAsync(u => u.AddressID == id);
                 if (address == null)
                 {
                     return NotFound();
                 }
-                await _dbAddres.RemoveAsync(address);
+                await _unitOfWork.Addresses.RemoveAsync(address);
                 _response.StatusCode = HttpStatusCode.NoContent;
                 _response.IsSuccess = true;
                 return Ok(_response);
@@ -151,7 +152,7 @@ namespace Demo_Mock_House_Finder.Controllers
         [HttpPut("id:int", Name = "UpdateAddress")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<APIResponse>> UpdateVilla(int id, [FromBody] AddressUpdateDTO updateDTO)
+        public async Task<ActionResult<APIResponse>> UpdateAddress(int id, [FromBody] AddressUpdateDTO updateDTO)
         {
             try
             {
@@ -162,7 +163,7 @@ namespace Demo_Mock_House_Finder.Controllers
 
                 Address model = _mapper.Map<Address>(updateDTO);
 
-                await _dbAddres.UpdateAsync(model);
+                await _unitOfWork.Addresses.UpdateAsync(model);
                 _response.StatusCode = HttpStatusCode.NoContent;
                 _response.IsSuccess = true;
                 return Ok(_response);
@@ -178,7 +179,7 @@ namespace Demo_Mock_House_Finder.Controllers
         [HttpPatch("id:int", Name = "UpdatePartialAddress")]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<APIResponse>> UpdatePartialVilla(int id, JsonPatchDocument<AddressUpdateDTO> patchDTO)
+        public async Task<ActionResult<APIResponse>> UpdatePartialAddress(int id, JsonPatchDocument<AddressUpdateDTO> patchDTO)
         {
             try
             {
@@ -187,7 +188,7 @@ namespace Demo_Mock_House_Finder.Controllers
                     return BadRequest();
                 }
            
-                var address = await _dbAddres.GetByIDAsync(u => u.AddressID == id, tracked: false);
+                var address = await _unitOfWork.Addresses.GetByIDAsync(u => u.AddressID == id, tracked: false);
                 AddressUpdateDTO addressDTO = _mapper.Map<AddressUpdateDTO>(address);
                 
                 if (address == null)
@@ -197,7 +198,7 @@ namespace Demo_Mock_House_Finder.Controllers
                 patchDTO.ApplyTo(addressDTO, ModelState);
                 Address model = _mapper.Map<Address>(addressDTO);
 
-                await _dbAddres.UpdateAsync(model);
+                await _unitOfWork.Addresses.UpdateAsync(model);
                 _response.StatusCode = HttpStatusCode.NoContent;
                 _response.IsSuccess = true;
                 return Ok(_response);

@@ -8,11 +8,11 @@ namespace Demo_Mock_House_Finder.Controllers
 {
     [Route("api/UserAuth")]
     [ApiController]
-    public class UserAuthenticationController : Controller
+    public class UserController : Controller
     {
-        private readonly IUserAuthenticationRepository _userRepo;
+        private readonly IUserRepository _userRepo;
         protected APIResponse _response;
-        public UserAuthenticationController(IUserAuthenticationRepository userRepo)
+        public UserController(IUserRepository userRepo)
         {
             _userRepo = userRepo;
             this._response = new();

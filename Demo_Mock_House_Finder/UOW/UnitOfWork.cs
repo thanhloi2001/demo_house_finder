@@ -54,18 +54,10 @@ namespace Demo_Mock_House_Finder.UOW
             Users = new UserRepository(Context);
             UserRoles = new UserRoleRepository(Context);
             Villages = new VillageRepository(Context);
-
         }
 
 
-        //The Dispose() method is used to free unmanaged resources like files, 
-        //database connections etc. at any time.
         
-
-        //The Context property will return the DBContext object i.e. (ApplicationDbcontext) object
-        //This Property is declared inside the Parent Interface and Initialized through the Constructor
-
-
         //The CreateTransaction() method will create a database Transaction so that we can do database operations
         //by applying do everything and do nothing principle
         public void CreateTransaction()

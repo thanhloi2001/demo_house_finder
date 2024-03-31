@@ -23,13 +23,17 @@ namespace Demo_Mock_House_Finder.Data
         public DbSet<RoomImage> Roomimages { get; set; }
         public DbSet<Report> Reports { get; set; }
         public DbSet<RoomHistory> RoomHistories { get; set; }
-        public DbSet<LocalUser> LocalUsers { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            
+            modelBuilder.Entity<UserRole>().HasData(
+                new UserRole { RoleID = 1, RoleName = "Admin", CreatedDate = DateTime.Now },
+                new UserRole { RoleID = 2, RoleName = "Staff", CreatedDate = DateTime.Now },
+                new UserRole { RoleID = 3, RoleName = "Landlord", CreatedDate = DateTime.Now },
+                new UserRole { RoleID = 4, RoleName = "Student", CreatedDate = DateTime.Now }
+            );
         }
     }
 }
