@@ -8,7 +8,7 @@ namespace Demo_Mock_House_Finder.Repository.GenericRepository
 {
     public class GenericRepository<T> : IGenericRepository<T>  where T : class
     {
-        private readonly ApplicationDbContext _db;
+        protected readonly ApplicationDbContext _db;
         protected readonly DbSet<T> _dbSet;
         public GenericRepository(ApplicationDbContext db)
         {
@@ -20,7 +20,7 @@ namespace Demo_Mock_House_Finder.Repository.GenericRepository
             await _dbSet.AddAsync(entity);
             await SaveAsync();
         }
-        public async Task<T> GetByIDAsync(Expression<Func<T, bool>> filter = null, bool tracked = true)
+        public async Task<T> GetByIDAsync(Expression<Func<T, bool>> filter = null, bool tracked = true, params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> query = _dbSet;
             if (!tracked)
@@ -31,16 +31,21 @@ namespace Demo_Mock_House_Finder.Repository.GenericRepository
             {
                 query = query.Where(filter);
             }
+            query = includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
+
             return await query.FirstOrDefaultAsync();
         }
 
-        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> filter = null)
+        public async Task<List<T>> GetAllAsync(Expression<Func<T, bool>> filter = null, params Expression<Func<T, object>>[] includeProperties)
         {
             IQueryable<T> query = _dbSet;
+            query = includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
             if (filter != null)
             {
                 query = query.Where(filter);
             }
+          
+
             return await query.ToListAsync();
 
         }

@@ -749,6 +749,56 @@
   },
   {
     "ContainingType": "Demo_Mock_House_Finder.Controllers.HouseController",
+    "Method": "GetHouseByGoogleMapLocation",
+    "RelativePath": "api/House/GetHouseByGoogleMapLocation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Demo_Mock_House_Finder.Model.APIResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json",
+          "application/xml",
+          "text/xml"
+        ],
+        "StatusCode": 404
+      }
+    ]
+  },
+  {
+    "ContainingType": "Demo_Mock_House_Finder.Controllers.HouseController",
     "Method": "GetHouseByName",
     "RelativePath": "api/House/GetHouseByName",
     "HttpMethod": "GET",

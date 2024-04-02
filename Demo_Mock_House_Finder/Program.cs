@@ -9,6 +9,8 @@ using Microsoft.OpenApi.Models;
 using Demo_Mock_House_Finder.Repository.IRepository;
 using System.Text;
 using Demo_Mock_House_Finder.UOW;
+using Demo_Mock_House_Finder.Service.IService;
+using Demo_Mock_House_Finder.Service;
 namespace Demo_Mock_House_Finder
 {
     public class Program
@@ -28,7 +30,7 @@ namespace Demo_Mock_House_Finder
 
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+            #region Repository
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped<IAddressRepository, AddressRepository>();
             builder.Services.AddScoped<ICampusRepository, CampusRepository>();
@@ -46,10 +48,12 @@ namespace Demo_Mock_House_Finder
             builder.Services.AddScoped<IUserRepository, UserRepository>(); 
             builder.Services.AddScoped<IUserRoleRepository, UserRoleRepository>();
             builder.Services.AddScoped<IVillageRepository, VillageRepository>();
-            
+            #endregion
             builder.Services.AddAutoMapper(typeof(MappingConfig));
 
-
+            #region Service
+            builder.Services.AddScoped<IHouseService, HouseService>();
+            #endregion
             var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
 
             builder.Services.AddAuthentication(x =>

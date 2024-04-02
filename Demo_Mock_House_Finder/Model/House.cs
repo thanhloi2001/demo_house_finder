@@ -12,8 +12,8 @@ namespace Demo_Mock_House_Finder.Model
         public string? Information {  get; set; }    
         public double? PowerPrice { get; set; }
         public double? WarerPrice { get; set; }
-        public DateTime CreatedDate { get; set; }
-        public DateTime LastModifiedDate { get; set; }
+        public DateTime? CreatedDate { get; set; }
+        public DateTime? LastModifiedDate { get; set; }
 
         public int? AddressID { get; set; }
         [ForeignKey("AddressID")]
@@ -45,6 +45,10 @@ namespace Demo_Mock_House_Finder.Model
         public ICollection<Rate>? Rates { get; set; }
         public ICollection<HouseImage>? HouseImages { get; set; }
         public ICollection<Report>? Reports { get; set; }
-        
+
+        //internal object Include(Func<object, object> value)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

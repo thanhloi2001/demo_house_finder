@@ -11,6 +11,10 @@ namespace Demo_Mock_House_Finder
             CreateMap<Address, AddressDTO>().ReverseMap();
             CreateMap<Address, AddressCreateDTO>().ReverseMap();
             CreateMap<Address, AddressUpdateDTO>().ReverseMap();
+            CreateMap<House, HouseDTO>().ReverseMap();
+            CreateMap<House, HouseUpdateDTO>().ReverseMap();
+            CreateMap<House, HouseCreateDTO>().ReverseMap();
+
         } 
     }
 }
