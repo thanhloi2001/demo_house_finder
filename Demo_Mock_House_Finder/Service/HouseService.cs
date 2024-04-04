@@ -75,12 +75,76 @@ namespace Demo_Mock_House_Finder.Service
                 throw new Exception("Error occurred while filtering houses by Google Map Location.", ex);
             }
         }
+        public async Task<HouseDTO> GetHouseDetailByID(int id)
+        {
+            try
+            {
+                Expression<Func<House, bool>> filterExpression = house => house.HouseID == id;
+                House house = await _unitOfWork.Houses.GetByIDAsync(filterExpression);
 
+                if(house == null)
+                {
+                    throw new Exception($"No house found with the provided ID: {id}");
+                }
+
+                HouseDTO houseDTO = _mapper.Map<HouseDTO>(house);
+                return houseDTO;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while getting house deatil by ID.", ex);
+            }
+        }
+
+        public async Task<List<RateDTO>> GetRateByHouseID(int id)
+        {
+            try
+            {
+                Expression<Func<Rate, bool>> filterExpression = rate => rate.House.HouseID == id;
+                List<Rate> rates = await _unitOfWork.Rates.GetAllAsync(filterExpression);
+                List<RateDTO> rateDTOs = _mapper.Map<List<RateDTO>>(rates);
+                if (rateDTOs == null || !rateDTOs.Any())
+                {
+                    throw new Exception("No Rates found for the house with ID: {id}.");
+                }
+
+                return rateDTOs;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occured while getting rate and comment of House.", ex);
+            }
+        }
+        public async Task<LandlordDTO> GetLandlordByHouseID(int id)
+        {
+            try
+            {
+                // Tìm kiếm nhà dựa trên ID và bao gồm thông tin về chủ nhà (Landlord)
+                Expression<Func<House, bool>> filterExpression = house => house.HouseID == id;
+                House house = await _unitOfWork.Houses.GetByIDAsync(filterExpression, includeProperties: h => h.Landlord);
+
+                if (house == null)
+                {
+                    throw new Exception($"No house found with the provided ID: {id}");
+                }
+
+                // Lấy thông tin về chủ nhà từ đối tượng House và ánh xạ thành DTO
+
+                if (house.Landlord == null)
+                {
+                    throw new Exception($"No landlord found for the house with ID: {id}");
+                }
+                LandlordDTO landlordDTO = _mapper.Map<LandlordDTO>(house.Landlord);
+                return landlordDTO;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Error occurred while getting landlord by house ID.", ex);
+            }
+        }
         public void savechange()
         {
             _unitOfWork.Commit();
         }
-       
-
     }
 }

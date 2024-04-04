@@ -11,6 +11,7 @@ using System.Text;
 using Demo_Mock_House_Finder.UOW;
 using Demo_Mock_House_Finder.Service.IService;
 using Demo_Mock_House_Finder.Service;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 namespace Demo_Mock_House_Finder
 {
     public class Program
@@ -30,6 +31,7 @@ namespace Demo_Mock_House_Finder
 
 
             builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+
             #region Repository
             builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             builder.Services.AddScoped<IAddressRepository, AddressRepository>();
@@ -53,7 +55,10 @@ namespace Demo_Mock_House_Finder
 
             #region Service
             builder.Services.AddScoped<IHouseService, HouseService>();
+            builder.Services.AddScoped<IRoomService, RoomService>();
+            builder.Services.AddScoped<IStudentService, StudentService>();
             #endregion
+
             var key = builder.Configuration.GetValue<string>("ApiSettings:Secret");
 
             builder.Services.AddAuthentication(x =>
@@ -116,6 +121,9 @@ namespace Demo_Mock_House_Finder
                 });
             });
             builder.Services.AddSwaggerGen();
+
+            //builder.Services.TryAddScoped<IHttpContextAccessor, HttpContextAccessor>();
+            builder.Services.AddHttpContextAccessor();
 
             var app = builder.Build();
 

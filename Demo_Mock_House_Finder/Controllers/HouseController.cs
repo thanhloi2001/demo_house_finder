@@ -18,7 +18,7 @@ namespace Demo_Mock_House_Finder.Controllers
     {
         protected APIResponse _response;
         private readonly IHouseService _houseService;
-        public HouseController(IHouseService houseService, IMapper mapper)
+        public HouseController(IHouseService houseService)
         {
             _houseService = houseService;
             this._response = new();
@@ -26,7 +26,7 @@ namespace Demo_Mock_House_Finder.Controllers
 
         [Route("GetAllHouse")]
         [HttpGet]
-        [Authorize]
+        //[Authorize]
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<APIResponse>> GetAllHouse()
         {
@@ -45,7 +45,7 @@ namespace Demo_Mock_House_Finder.Controllers
             return _response;
         }
 
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [Route("GetHouseByName")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -67,7 +67,7 @@ namespace Demo_Mock_House_Finder.Controllers
             }
             return _response;
         }
-        [Authorize(Roles = "Admin")]
+        //[Authorize(Roles = "Admin")]
         [Route("GetHouseByGoogleMapLocation")]
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
@@ -78,6 +78,72 @@ namespace Demo_Mock_House_Finder.Controllers
             try
             {
                 _response.Result = await _houseService.GetHouseByGoogleMapLocation(Name);
+                _response.StatusCode = HttpStatusCode.OK;
+                return Ok(_response);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.ErrorMessages
+                    = new List<string> { ex.ToString() };
+            }
+            return _response;
+        }
+        //[Authorize(Roles = "Admin")]
+        [Route("GetHouseDetailByID")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<APIResponse>> GetHouseDetailByID(int id)
+        {
+            try
+            {
+                _response.Result = await _houseService.GetHouseDetailByID(id);
+                _response.StatusCode = HttpStatusCode.OK;
+                return Ok(_response);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.ErrorMessages
+                    = new List<string> { ex.ToString() };
+            }
+            return _response;
+        }
+        //[Authorize(Roles = "Admin")]
+        [Route("GetRateByHouseID")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<APIResponse>> GetRateByHouseID(int id)
+        {
+            try
+            {
+                _response.Result = await _houseService.GetRateByHouseID(id);
+                _response.StatusCode = HttpStatusCode.OK;
+                return Ok(_response);
+            }
+            catch (Exception ex)
+            {
+                _response.IsSuccess = false;
+                _response.ErrorMessages
+                    = new List<string> { ex.ToString() };
+            }
+            return _response;
+        }
+        //[Authorize(Roles = "Admin")]
+        [Route("GetLandlordByHouseID")]
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<ActionResult<APIResponse>> GetLandlordByHouseID(int id)
+        {
+            try
+            {
+                _response.Result = await _houseService.GetLandlordByHouseID(id);
                 _response.StatusCode = HttpStatusCode.OK;
                 return Ok(_response);
             }

@@ -27,11 +27,11 @@ namespace Demo_Mock_House_Finder.Repository.GenericRepository
             {
                 query = query.AsNoTracking();
             }
+            query = includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
             if (filter != null)
             {
                 query = query.Where(filter);
             }
-            query = includeProperties.Aggregate(query, (current, includeProperty) => current.Include(includeProperty));
 
             return await query.FirstOrDefaultAsync();
         }

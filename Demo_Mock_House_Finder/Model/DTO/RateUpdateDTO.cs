@@ -1,26 +1,19 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Demo_Mock_House_Finder.Model
+namespace Demo_Mock_House_Finder.Model.DTO
 {
-    [Table("Rate")]
-    public class Rate
+    public class RateUpdateDTO
     {
-        [Key]
         public int RateID { get; set; }
-        public int? Star {  get; set; }
-        public string? Comment {  get; set; }
-        public string? LandlordReply {  get; set; }
+        public int? Star { get; set; }
+        public string? Comment { get; set; }
+        public string? LandlordReply { get; set; }
         public int? HouseID { get; set; }
         [ForeignKey("HouseID")]
         public House? House { get; set; }
         public int? StudentID { get; set; }
         [ForeignKey("StudentID")]
         public User? UserStudent { get; set; }
-
-        public DateTime? CreatedDate { get; set; }
-        public DateTime? LastModifiedDate { get; set; }
-
         public int? CreatedBy { get; set; }
         [ForeignKey("CreatedBy")]
         public User? UserCreated { get; set; }

@@ -11,8 +11,7 @@ namespace Demo_Mock_House_Finder.Model.DTO
         public double? WarerPrice { get; set; } 
 
         public int? AddressID { get; set; }
-        public Address? Address { get; set; }
-
+        
         public int? VillageID { get; set; }
 
         public Village? Village { get; set; }

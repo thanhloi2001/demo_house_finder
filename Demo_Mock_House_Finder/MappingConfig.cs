@@ -14,7 +14,15 @@ namespace Demo_Mock_House_Finder
             CreateMap<House, HouseDTO>().ReverseMap();
             CreateMap<House, HouseUpdateDTO>().ReverseMap();
             CreateMap<House, HouseCreateDTO>().ReverseMap();
-
+            CreateMap<Rate, RateDTO>().ReverseMap();
+            CreateMap<Rate, RateCreateDTO>().ReverseMap();
+            CreateMap<Rate, RateUpdateDTO>().ReverseMap();
+            CreateMap<User, LandlordDTO>().ReverseMap();
+            CreateMap<User, LandlordCreateDTO>().ReverseMap();
+            CreateMap<User, LandlordUpdateDTO>().ReverseMap();
+            CreateMap<Room, RoomDTO>().ReverseMap();
+            CreateMap<Room, RoomCreateDTO>().ReverseMap();
+            CreateMap<Room, RoomUpdateDTO>().ReverseMap();
         } 
     }
 }
